@@ -1,0 +1,151 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 25vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.EventList{
+    display: grid;
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "Event1" 
+        "Event2"
+        "Event3";
+}
+
+.EventList div{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 4fr 2fr 4fr 3fr;
+    margin: 10px;
+}
+
+.Event1{
+    grid-area: Event1;
+    height: 15vh;
+    width: 90vw;
+}
+
+.Event2{
+    grid-area: Event2;
+    height: 15vh;
+    width: 90vw;
+}
+
+.Event3{
+    grid-area: Event3;
+    height: 15vh;
+    width: 90vw;
+}
+
+.Event1 div, .Event2 div, .Event3 div{
+    display: block;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px;
+    padding: 0px;
+    text-transform: capitalize  ;
+}
+
+p{
+    margin: 5px;
+    padding: 0px;
+}
+
+.subtitle{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ora{
+    justify-self: center;
+    width: 40px;
+}
+
+
+header h1{
+    width: 100vw;
+}
+
+header div{
+    margin-top: 10px;
+    width: 20vw;
+}
+
+.botton{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.location{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+@media screen and (max-width: 992px){
+    .EventList div{
+        display: grid;
+        background-color: white;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+    .Event1 div, .Event2 div, .Event3 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Event1{
+        grid-area: Event1;
+        height: 60vh;
+        width: 90vw;
+    }
+    
+    .Event2{
+        grid-area: Event2;
+        height: 60vh;
+        width: 90vw;
+    }
+    
+    .Event3{
+        grid-area: Event3;
+        height: 60vh;
+        width: 90vw;
+    }
+
+    .ora{
+        width: 40px;
+    }
+    .botton{
+        background-color: black;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 35px;
+        line-height: 35px;
+        width: 30vw;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Esercizio Tabella</title>
+	<style> 
+		table, td, th {
+			border: 1px solid black;
+		}
+		.dist {font-weight: bold}
+		.ruolo {background-color: yellow;}
+		th, tr, td {padding: 10px}
+		p {text-align: center;}
+		table {text-align: center;}
+	</style>
+</head>
+<body>
+	<p>Tabella dipendenti</p>
+	<table>
+		<tr>
+			<th rowspan="2" class="ruolo"></th>
+			<th rowspan="2">Distribuzione</th>
+			<th colspan="2">Media</th>
+		</tr>
+		<tr>
+			<th>RAL</th>
+			<th>Ore</th>
+		</tr>
+				<tr>
+			<th class="ruolo">Managere</th>
+			<td class="dist">2%</td>
+			<td>100.00€</td>
+			<td>-</td>
+		</tr>
+				<tr>
+			<th class="ruolo">Impiegati</th>
+			<td class="dist">20%</td>
+			<td>40.00€</td>
+			<td rowspan="2">40</td>
+		</tr>
+				<tr>
+			<th class="ruolo">Operai</th>
+			<td class="dist">78%</td>
+			<td>35.000€</td>
+		</tr>
+	</table>
+</body>
+</html>

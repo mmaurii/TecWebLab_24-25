@@ -165,7 +165,7 @@ footer .social-media a:hover {
     color: #a0c4ff;
 }
 
-/* Responsive Styles */
+/* Responsive Styles, media query */
 @media (max-width: 768px) {
     header, footer {
         flex-direction: column; /* Disposizione verticale per schermi piccoli */

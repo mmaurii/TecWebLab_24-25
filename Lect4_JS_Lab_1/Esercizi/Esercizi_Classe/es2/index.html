@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4: Esercizi Base Javascript</title>
+    </head>
+    <body>
+        <h1>Prove Javascript</h1>
+        <p id="para1">Un paragrafo di prova.</p>
+        <h1>Test</h1>
+        <button type="button" onclick="onclick_fn()">Clicca qui</button>
+    </body>
+    <script>
+        //Inserire elementi JS
+        
+        /* Come al solito, sarebbe preferibile utilizzare
+        file esterni, per avere un maggiore controllo: 
+        e.g. <script type="text/javascript" src="percorso/al/tuo/script.js"> */
+        function onclick_fn(){ 
+            //innerHTML prende i tag all'interno del tag selezionato e li restituisce come testo
+            var h1 = document.getElementsByTagName("h1")[0].innerHTML;
+            var para1 = document.getElementById("para1");
+            para1.textContent = h1;
+        }
+    </script>
+</html>
